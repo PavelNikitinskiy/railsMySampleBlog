@@ -337,3 +337,48 @@ Processing by MicropostsController#show as HTML
   [1m[36mMicropost Load (0.2ms)[0m  [1mSELECT  "microposts".* FROM "microposts" WHERE "microposts"."id" = ? LIMIT 1[0m  [["id", 2]]
   Rendered microposts/show.html.erb within layouts/application (0.4ms)
 Completed 200 OK in 24ms (Views: 22.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/dashboard" for 127.0.0.1 at 2015-12-23 11:40:23 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+ActionController::RoutingError (No route matches [GET] "/dashboard"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/dev04/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/dev04/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/dev04/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/dev04/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /Users/dev04/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (11.3ms)
+  Rendered /Users/dev04/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (47.6ms)
+  Rendered /Users/dev04/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (21.6ms)
+  Rendered /Users/dev04/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (201.3ms)
+  Rendered /Users/dev04/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/dev04/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/dev04/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/dev04/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/dev04/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (86.9ms)
+  Rendered /Users/dev04/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/dev04/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/dev04/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (189.4ms)
